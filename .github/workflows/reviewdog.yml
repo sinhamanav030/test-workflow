@@ -12,3 +12,5 @@ jobs:
         uses: reviewdog/action-golangci-lint@v2
         with:
           golangci_lint_flags: '--enable-all'
+          reporter: github-check
+
