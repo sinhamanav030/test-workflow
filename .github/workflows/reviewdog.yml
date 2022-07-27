@@ -1,5 +1,5 @@
 name: reviewdog
-on: [push]
+on: [commit]
 jobs:
   golangci-lint:
     name: runner / golangci-lint
@@ -11,6 +11,6 @@ jobs:
       - name: golangci-lint
         uses: reviewdog/action-golangci-lint@v2
         with:
-          golangci_lint_flags: '--enable-all'
+          golangci_lint_flags: '--enable-all '
           reporter: github-check
 
